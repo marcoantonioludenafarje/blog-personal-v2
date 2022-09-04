@@ -43,7 +43,7 @@ module.exports = async (
 
   posts.forEach(({ node }, index) => {
     const { id, slug, category, tags, link } = node
-
+    console.log("El id es ", id)
     if (link) return //skip creating pages for nodes linking to external sites
 
     const previous = index === posts.length - 1 ? null : posts[index + 1]
@@ -65,7 +65,8 @@ module.exports = async (
         previousId: previous ? previous.node.id : undefined,
         nextId: next ? next.node.id : undefined,
         ...pageContextOptions
-      }
+      },
+      defer: true,
     })
   })
 }
