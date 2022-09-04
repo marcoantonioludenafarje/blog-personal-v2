@@ -1,15 +1,29 @@
+require('dotenv').config()
+
+
 module.exports = {
   flags: {
     DEV_SSR: false
   },
   plugins: [
     {
+      resolve: 'gatsby-source-contentful',
+      options: {
+        spaceId: process.env.CONTENTFUL_SPACE_ID,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN
+      }
+    },
+    {
+      // ATTENTION: Match the theme name with the theme you're using
       resolve: '@elegantstack/gatsby-theme-flexiblog-personal',
       options: {
-        // Add theme options here. Check documentation for available options.
-        siteUrl: process.env.URL || process.env.VERCEL_URL
+        siteUrl: process.env.URL || process.env.VERCEL_URL,
+        sources: {
+          contentful: true,
+          local: false,
+        }
       }
-    }
+    },
   ],
   // Customize your site metadata:
   siteMetadata: {
