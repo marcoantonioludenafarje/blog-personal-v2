@@ -17,8 +17,11 @@ const styles = {
 }
 
 export const HeaderMenu = ({ mobileMenu = {} }) => {
-  const { headerMenu } = useSiteMetadata()
-
+  const { headerMenu, owner } = useSiteMetadata()
+  
+  console.log("El headerMenu", headerMenu)
+  console.log("El owner", owner)
+  
   const desktopMenuNav = (
     <Navigation
       variant='horizontal'

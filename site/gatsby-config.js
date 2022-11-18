@@ -28,13 +28,17 @@ module.exports = {
   // Customize your site metadata:
   siteMetadata: {
     //General Site Metadata
-    title: 'FlexiBlog Theme',
-    name: 'FlexiBlog',
-    description: 'My site description...',
+    title: 'The real theme',
+    name: 'Marco Ludena',
+    description: 'My personal web ...',
     address: 'New York, NY',
     email: 'email@example.com',
     phone: '+1 (888) 888-8888',
-
+    owner:{
+      name: 'Marco Ludena',
+      principalProfession: 'Software Architect',
+      description: 'Product Builder | Tech Mentor'
+    },
     //Site Social Media Links
     social: [
       {
@@ -60,11 +64,11 @@ module.exports = {
       {
         name: 'About Me',
         slug: '/about'
-      },
-      {
-        name: 'Contact',
-        slug: '/contact'
       }
+      // {
+      //   name: 'Contact',
+      //   slug: '/contact'
+      // }
     ],
 
     //Footer Menu Items (2 Sets)
@@ -83,7 +87,15 @@ module.exports = {
           {
             name: 'Contact Us',
             slug: '/contact'
-          }
+          },
+          {
+            name: 'Cv generator',
+            slug: '/cvgenerator'
+          },
+          {
+            name: 'Another',
+            slug: '/another'
+          },
         ]
       },
       {

@@ -48,29 +48,30 @@ const BannerWide = () => {
   const bg = file && file.hero && file.hero.regular
 
   return (
-    <Hero sx={styles.hero(bg.src)}>
-      <HeroWide.Wrapper sx={styles.wrapper}>
-        <HeroWide.LeftColumn>
-          <Heading variant='h1' sx={styles.heading}>
-            Get Inspired to Achieve
-            <br />
-            <span>Enhanced Outcomes.</span>
-          </Heading>
-        </HeroWide.LeftColumn>
-        <HeroWide.RightColumn sx={styles.rightColumn}>
-          <Box sx={styles.quoteWrapper}>
-            <Heading variant='h3' sx={styles.quote}>
-              “While one person hesitates because he feels inferior, the other
-              is busy making mistakes and becoming superior.”
-            </Heading>
-            <Heading variant='h4' sx={styles.quoteAuthor}>
-              Henry C. Link
-            </Heading>
-          </Box>
-        </HeroWide.RightColumn>
-      </HeroWide.Wrapper>
-      <MemphisPattern />
-    </Hero>
+    <div>Hola </div>
+    // <Hero sx={styles.hero(bg.src)}>
+    //   <HeroWide.Wrapper sx={styles.wrapper}>
+    //     <HeroWide.LeftColumn>
+    //       <Heading variant='h1' sx={styles.heading}>
+    //         Get Inspired to Achieve
+    //         <br />
+    //         <span>Enhanced Outcomes.</span>
+    //       </Heading>
+    //     </HeroWide.LeftColumn>
+    //     <HeroWide.RightColumn sx={styles.rightColumn}>
+    //       <Box sx={styles.quoteWrapper}>
+    //         <Heading variant='h3' sx={styles.quote}>
+    //           “While one person hesitates because he feels inferior, the other
+    //           is busy making mistakes and becoming superior.”
+    //         </Heading>
+    //         <Heading variant='h4' sx={styles.quoteAuthor}>
+    //           Henry C. Link
+    //         </Heading>
+    //       </Box>
+    //     </HeroWide.RightColumn>
+    //   </HeroWide.Wrapper>
+    //   <MemphisPattern />
+    // </Hero>
   )
 }
 

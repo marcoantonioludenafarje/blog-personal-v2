@@ -20,7 +20,7 @@ const styles = {
 
 const AuthorCompact = ({ author, omitSocial, ...props }) => {
   if (!author) return ''
-
+  console.log("Author", author)
   return (
     <Section aside title='The Author' {...props}>
       <Card variant='paper'>

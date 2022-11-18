@@ -20,6 +20,7 @@ const Posts = ({ data: { paginatedPosts = {} }, ...props }) => {
   return (
     <Layout {...props}>
       <Seo title='Home' />
+      <div>Hola mundo </div>
       <Hero sx={{ bg: `contentBg` }}>
         <HeroComponent {...props} />
       </Hero>

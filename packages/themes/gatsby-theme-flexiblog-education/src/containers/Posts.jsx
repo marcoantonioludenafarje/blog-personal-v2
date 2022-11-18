@@ -16,6 +16,7 @@ const Posts = ({ data: { posts = {}, featuredPosts = {} }, ...props }) => {
       <Divider />
       <Stack>
         <Main>
+          <div>Hey</div>
           <Hero />
         </Main>
       </Stack>
