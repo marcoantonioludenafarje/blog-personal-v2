@@ -16,7 +16,8 @@
 		"gatsby-source-contentful": "^7.21.1",
 		"gatsby-source-sanity": "^7.4.2",
 		"react": "^18.1.0",
-		"react-dom": "^18.1.0"
+		"react-dom": "^18.1.0",
+		"sharp": "^0.31.2"
 	},
 	"devDependencies": {
 		"prettier": "^2.6.2"
