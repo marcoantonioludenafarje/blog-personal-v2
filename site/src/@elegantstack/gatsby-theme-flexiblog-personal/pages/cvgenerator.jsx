@@ -42,7 +42,7 @@ export default props => {
 
     let data = {
 
-        "nameProfile": "Alex Suquillo",
+        "nameProfile": "Marco Ludena",
         "actualTitle": "Application Architect en Kushki",
         "imageProfile": "https://media-exp1.licdn.com/dms/image/C4E03AQEyIKoaaJk3tA/profile-displayphoto-shrink_400_400/0/1571071367384?e=1672272000&v=beta&t=IkiQAFG-iIrp0MGgS2_8n2DqfnF2EXIfjRAFi-YeQpg",
         "skills": [
@@ -114,17 +114,16 @@ export default props => {
               height: '100px',
             borderRadius: 99999}} src={data.imageProfile} />
 
-            <Box>
+            {/* <Box>
               <Text>{data.nameProfile }</Text>
               <Text>{data.actualTitle }</Text>
             </Box>
 
           <Box sx={styles.imageWrapper}>
-            {/* <Img image={image} /> */}
             <Button as={GLink} to='/contact' sx={styles.button}>
                 Mi CV GENERATOR v2
             </Button>
-          </Box>
+          </Box> */}
         </Main>
       </Stack>
     </Layout>
